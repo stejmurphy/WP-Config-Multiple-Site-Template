@@ -18,24 +18,8 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-
-define('DB_NAME', $db_name);
-
-define('DB_USER', $db_user);
-
-define('DB_PASSWORD', $db_password);
-
-define('DB_HOST', $db_host);
-
-define('DB_CHARSET', 'utf8mb4');
-
-define('DB_COLLATE', '');
-
-
 if ($_SERVER['HTTP_HOST'] == '') {
-	$db_name = '';
+    $db_name = '';
     $db_user = '';
     $db_password = '';
     $db_host = '';
@@ -101,6 +85,22 @@ if ($_SERVER['HTTP_HOST'] == '') {
 
 }
 
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+
+define('DB_NAME', $db_name);
+
+define('DB_USER', $db_user);
+
+define('DB_PASSWORD', $db_password);
+
+define('DB_HOST', $db_host);
+
+define('DB_CHARSET', 'utf8mb4');
+
+define('DB_COLLATE', '');
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -118,6 +118,7 @@ define('AUTH_SALT',        '');
 define('SECURE_AUTH_SALT', '');
 define('LOGGED_IN_SALT',   '');
 define('NONCE_SALT',       '');
+
 
 /**#@-*/
 
