@@ -34,7 +34,6 @@ define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
 
 
-
 if ($_SERVER['HTTP_HOST'] == '') {
 	$db_name = '';
     $db_user = '';
@@ -44,11 +43,11 @@ if ($_SERVER['HTTP_HOST'] == '') {
     define('ENVIRONMENT', '');
     define('WP_SITEURL', '');
     define('WP_HOME', '');
-    define('AUTOMATIC_UPDATER_DISABLED', true );
+    define('AUTOMATIC_UPDATER_DISABLED', false );
     define('WP_AUTO_UPDATE_CORE', false );
 
     error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    ini_set('display_errors', '0');
     define('WP_DEBUG', false);
     
 } elseif ($_SERVER['HTTP_HOST'] == '') {
@@ -60,15 +59,15 @@ if ($_SERVER['HTTP_HOST'] == '') {
     define('ENVIRONMENT', '');
     define('WP_SITEURL', '');
     define('WP_HOME', '');
-    define('AUTOMATIC_UPDATER_DISABLED', true );
+    define('AUTOMATIC_UPDATER_DISABLED', false );
     define('WP_AUTO_UPDATE_CORE', false );
 
     error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    ini_set('display_errors', '0');
     define('WP_DEBUG', false);
     
 
-}elseif ($_SERVER['HTTP_HOST'] == '') {
+} elseif ($_SERVER['HTTP_HOST'] == '') {
     $db_name = '';
     $db_user = '';
     $db_password = '';
@@ -77,14 +76,14 @@ if ($_SERVER['HTTP_HOST'] == '') {
     define('ENVIRONMENT', '');
     define('WP_SITEURL', '');
     define('WP_HOME', '');
-    define('AUTOMATIC_UPDATER_DISABLED', true );
+    define('AUTOMATIC_UPDATER_DISABLED', false );
     define('WP_AUTO_UPDATE_CORE', false );
 
     error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    ini_set('display_errors', '0');
     define('WP_DEBUG', false);
 
-}else{
+} else{
     $db_name = '';
     $db_user = '';
     $db_password = '';
@@ -93,11 +92,11 @@ if ($_SERVER['HTTP_HOST'] == '') {
     define('ENVIRONMENT', '');
     define('WP_SITEURL', '');
     define('WP_HOME', '');
-    define('AUTOMATIC_UPDATER_DISABLED', true );
+    define('AUTOMATIC_UPDATER_DISABLED', false );
     define('WP_AUTO_UPDATE_CORE', false );
 
     error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    ini_set('display_errors', '0');
     define('WP_DEBUG', false);
 
 }
